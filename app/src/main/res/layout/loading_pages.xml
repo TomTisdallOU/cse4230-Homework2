@@ -1,12 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--Figured out opacity  use hex opacity values (first two characters in front of color
  see background below, bf = 75% -->
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#bf21283b">
+    android:background="@drawable/restaurant_image"
+    android:alpha="0.8"
+    >
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/restaurant_logo_original"
+    android:layout_gravity="center"
+    android:layout_marginLeft="100dp"
+    android:layout_marginRight="100dp"/>
 
-
-
-
-</android.support.constraint.ConstraintLayout>
+</FrameLayout>
