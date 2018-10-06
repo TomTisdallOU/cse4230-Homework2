@@ -55,7 +55,7 @@
         android:background="@android:color/white">
 
         <TextView
-            android:id="@+id/textView8"
+            android:id="@+id/wineIsHereTextView"
             android:layout_width="0dp"
             android:layout_height="19dp"
             android:layout_marginStart="8dp"
@@ -68,7 +68,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/textView10"
+            android:id="@+id/whiteWhineTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="8dp"
@@ -77,12 +77,12 @@
             android:text="Red Wine / 2005"
             android:textColor="@android:color/darker_gray"
             android:textSize="12sp"
-            app:layout_constraintEnd_toEndOf="@+id/textView8"
+            app:layout_constraintEnd_toEndOf="@+id/wineIsHereTextView"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView8" />
+            app:layout_constraintTop_toBottomOf="@+id/wineIsHereTextView" />
 
         <EditText
-            android:id="@+id/editText2"
+            android:id="@+id/longEditText"
             android:layout_width="173dp"
             android:layout_height="65dp"
             android:layout_marginBottom="50dp"
@@ -95,16 +95,16 @@
             android:textSize="12sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView10" />
+            app:layout_constraintTop_toBottomOf="@+id/whiteWhineTextView" />
 
         <TextView
-            android:id="@+id/textView11"
+            android:id="@+id/nineteenDollarextView"
             android:layout_width="200dp"
             android:layout_height="46dp"
             android:background="#221c32"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editText2" />
+            app:layout_constraintTop_toBottomOf="@+id/longEditText" />
 
         <TextView
             android:id="@+id/textView15"
@@ -115,36 +115,36 @@
             android:text="Bottle"
             android:textSize="10sp"
             android:textStyle="italic"
-            app:layout_constraintStart_toEndOf="@+id/textView14"
-            app:layout_constraintTop_toBottomOf="@+id/textView13" />
+            app:layout_constraintStart_toEndOf="@+id/expensiveTextView"
+            app:layout_constraintTop_toBottomOf="@+id/glassTextView" />
 
         <TextView
-            android:id="@+id/textView14"
+            android:id="@+id/expensiveTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:text="$26.00"
-            app:layout_constraintStart_toStartOf="@+id/textView11"
-            app:layout_constraintTop_toBottomOf="@+id/textView12" />
+            app:layout_constraintStart_toStartOf="@+id/nineteenDollarextView"
+            app:layout_constraintTop_toBottomOf="@+id/twoDollarTextView" />
 
         <TextView
-            android:id="@+id/textView12"
+            android:id="@+id/twoDollarTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:text="$2.50"
-            app:layout_constraintStart_toStartOf="@+id/textView11"
+            app:layout_constraintStart_toStartOf="@+id/nineteenDollarextView"
             tools:layout_editor_absoluteY="113dp" />
 
         <TextView
-            android:id="@+id/textView13"
+            android:id="@+id/glassTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingTop="5dp"
             android:text="Glass"
             android:textSize="10sp"
             android:textStyle="italic"
-            app:layout_constraintTop_toTopOf="@+id/textView12"
+            app:layout_constraintTop_toTopOf="@+id/twoDollarTextView"
             tools:layout_editor_absoluteX="50dp" />
 
         <ImageView
@@ -155,8 +155,8 @@
             android:layout_marginEnd="8dp"
             android:layout_marginStart="120dp"
             android:layout_marginTop="83dp"
-            app:layout_constraintBottom_toBottomOf="@+id/textView11"
-            app:layout_constraintEnd_toEndOf="@+id/editText2"
+            app:layout_constraintBottom_toBottomOf="@+id/nineteenDollarextView"
+            app:layout_constraintEnd_toEndOf="@+id/longEditText"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/active_icons_line2" />
@@ -173,4 +173,141 @@
             app:layout_constraintStart_toStartOf="@+id/imageView10"
             app:layout_constraintTop_toTopOf="@+id/imageView10" />
     </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="206dp"
+        android:layout_height="159dp"
+        android:background="@android:color/white">
+
+        <TextView
+            android:id="@+id/wineIsHereTextView"
+            android:layout_width="0dp"
+            android:layout_height="19dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:paddingStart="20dp"
+            android:text="WINE NAME IS HERE"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/whiteWhineTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:paddingStart="15dp"
+            android:text="White Wine / 2010"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@+id/wineIsHereTextView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/wineIsHereTextView" />
+
+        <EditText
+            android:id="@+id/longEditText"
+            android:layout_width="173dp"
+            android:layout_height="65dp"
+            android:layout_marginBottom="50dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, seddo eiusmod tempr"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/whiteWhineTextView" />
+
+        <TextView
+            android:id="@+id/nineteenDollarextView"
+            android:layout_width="200dp"
+            android:layout_height="46dp"
+            android:background="#221c32"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/longEditText" />
+
+        <TextView
+            android:id="@+id/bottleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:paddingStart="5dp"
+            android:text="Bottle"
+            android:textSize="10sp"
+            android:textStyle="italic"
+            app:layout_constraintStart_toEndOf="@+id/expensiveTextView"
+            app:layout_constraintTop_toBottomOf="@+id/glassTextView" />
+
+        <TextView
+            android:id="@+id/expensiveTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="$19.50"
+            app:layout_constraintStart_toStartOf="@+id/nineteenDollarextView"
+            app:layout_constraintTop_toBottomOf="@+id/twoDollarTextView" />
+
+        <TextView
+            android:id="@+id/twoDollarTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="$2.00"
+            app:layout_constraintStart_toStartOf="@+id/nineteenDollarextView"
+            tools:layout_editor_absoluteY="113dp" />
+
+        <TextView
+            android:id="@+id/glassTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:text="Glass"
+            android:textSize="10sp"
+            android:textStyle="italic"
+            app:layout_constraintTop_toTopOf="@+id/twoDollarTextView"
+            tools:layout_editor_absoluteX="50dp" />
+
+        <ImageView
+            android:id="@+id/orangeSquareImageView"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="83dp"
+            app:layout_constraintBottom_toBottomOf="@+id/nineteenDollarextView"
+            app:layout_constraintEnd_toEndOf="@+id/nineteenDollarextView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/active_icons_line2" />
+
+        <TextView
+            android:id="@+id/bestPriceTextView"
+            android:layout_width="31dp"
+            android:layout_height="21dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="BEST PRICE"
+            android:textAlignment="center"
+            android:textSize="8sp"
+            app:layout_constraintBottom_toBottomOf="@+id/orangeSquareImageView"
+            app:layout_constraintEnd_toEndOf="@+id/orangeSquareImageView"
+            app:layout_constraintStart_toStartOf="@+id/orangeSquareImageView"
+            app:layout_constraintTop_toTopOf="@+id/orangeSquareImageView" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="206dp"
+        android:layout_height="159dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/wine" />
 </GridLayout>

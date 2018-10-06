@@ -125,10 +125,10 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView"
-        app:layout_constraintEnd_toEndOf="@+id/imageView"
-        app:layout_constraintStart_toStartOf="@+id/imageView"
-        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintBottom_toBottomOf="@+id/orangeSquareImageView"
+        app:layout_constraintEnd_toEndOf="@+id/orangeSquareImageView"
+        app:layout_constraintStart_toStartOf="@+id/orangeSquareImageView"
+        app:layout_constraintTop_toTopOf="@+id/orangeSquareImageView"
         app:srcCompat="@drawable/google_icon_black" />
 
     <EditText
@@ -224,7 +224,7 @@
         app:layout_constraintStart_toEndOf="@+id/textView7" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/orangeSquareImageView"
         android:layout_width="51dp"
         android:layout_height="41dp"
         android:layout_alignEnd="@+id/imageView4"
@@ -239,22 +239,22 @@
         android:id="@+id/imageView5"
         android:layout_width="51dp"
         android:layout_height="41dp"
-        android:layout_alignTop="@+id/imageView"
+        android:layout_alignTop="@+id/orangeSquareImageView"
         android:layout_marginBottom="8dp"
         android:layout_toStartOf="@+id/imageView3"
         android:paddingEnd="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/imageView"
+        app:layout_constraintEnd_toStartOf="@+id/orangeSquareImageView"
         app:srcCompat="@drawable/circle_icon_black" />
 
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="51dp"
         android:layout_height="41dp"
-        android:layout_alignTop="@+id/imageView"
+        android:layout_alignTop="@+id/orangeSquareImageView"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="2dp"
-        android:layout_toStartOf="@+id/imageView"
+        android:layout_toStartOf="@+id/orangeSquareImageView"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/imageView5"
         app:srcCompat="@drawable/circle_icon_black" />
