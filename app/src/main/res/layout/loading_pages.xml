@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Figured out opacity  use hex opacity values (first two characters in front of color
+ see background below, bf = 75% -->
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#bf21283b">
+
+
+
+
+</android.support.constraint.ConstraintLayout>
