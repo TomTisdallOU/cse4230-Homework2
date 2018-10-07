@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
 <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -10,7 +9,7 @@
     android:rowCount="4">
 
     <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
-        android:id="@+id/my_toolbar"
+        android:id="@+id/wineTitleToolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:layout_columnSpan="2"
@@ -23,6 +22,7 @@
             android:layout_height="match_parent">
 
             <ImageView
+                android:id="@+id/backArrowImageView"
                 android:layout_width="wrap_content"
                 android:layout_height="24dp"
                 android:layout_alignParentStart="true"
@@ -31,6 +31,7 @@
                 android:src="@drawable/arrow" />
 
             <TextView
+                android:id="@+id/wineListTextView"
                 android:layout_width="192dp"
                 android:layout_height="30dp"
                 android:layout_centerInParent="true"
@@ -43,7 +44,7 @@
     </android.support.v7.widget.Toolbar>
 
     <ImageView
-        android:id="@+id/imageView9"
+        android:id="@+id/firstWineImageView"
         android:layout_width="206dp"
         android:layout_height="159dp"
         android:scaleType="fitXY"
@@ -55,7 +56,7 @@
         android:background="@android:color/white">
 
         <TextView
-            android:id="@+id/wineIsHereTextView"
+            android:id="@+id/wineNameIsHereTextView1"
             android:layout_width="0dp"
             android:layout_height="19dp"
             android:layout_marginStart="8dp"
@@ -68,7 +69,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/whiteWhineTextView"
+            android:id="@+id/redWineTextView1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="8dp"
@@ -77,12 +78,12 @@
             android:text="Red Wine / 2005"
             android:textColor="@android:color/darker_gray"
             android:textSize="12sp"
-            app:layout_constraintEnd_toEndOf="@+id/wineIsHereTextView"
+            app:layout_constraintEnd_toEndOf="@+id/wineNameIsHereTextView1"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/wineIsHereTextView" />
+            app:layout_constraintTop_toBottomOf="@+id/wineNameIsHereTextView1" />
 
         <EditText
-            android:id="@+id/longEditText"
+            android:id="@+id/descriptionEditText1"
             android:layout_width="173dp"
             android:layout_height="65dp"
             android:layout_marginBottom="50dp"
@@ -95,83 +96,90 @@
             android:textSize="12sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/whiteWhineTextView" />
+            app:layout_constraintTop_toBottomOf="@+id/redWineTextView1" />
 
         <TextView
-            android:id="@+id/nineteenDollarextView"
+            android:id="@+id/outsideTextView1"
             android:layout_width="200dp"
             android:layout_height="46dp"
             android:background="#221c32"
+            android:textColor="@android:color/white"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/longEditText" />
+            app:layout_constraintTop_toBottomOf="@+id/descriptionEditText1" />
 
         <TextView
-            android:id="@+id/textView15"
+            android:id="@+id/bottleTextView1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
             android:paddingStart="5dp"
             android:text="Bottle"
+            android:textColor="@android:color/white"
             android:textSize="10sp"
             android:textStyle="italic"
-            app:layout_constraintStart_toEndOf="@+id/expensiveTextView"
-            app:layout_constraintTop_toBottomOf="@+id/glassTextView" />
+            app:layout_constraintStart_toEndOf="@+id/twentyThreeTextView1"
+            app:layout_constraintTop_toBottomOf="@+id/glassTextView1" />
 
         <TextView
-            android:id="@+id/expensiveTextView"
+            android:id="@+id/twentyThreeTextView1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:text="$26.00"
-            app:layout_constraintStart_toStartOf="@+id/nineteenDollarextView"
-            app:layout_constraintTop_toBottomOf="@+id/twoDollarTextView" />
+            android:textColor="@android:color/white"
+            app:layout_constraintStart_toStartOf="@+id/outsideTextView1"
+            app:layout_constraintTop_toBottomOf="@+id/threeDollarTextView1" />
 
         <TextView
-            android:id="@+id/twoDollarTextView"
+            android:id="@+id/threeDollarTextView1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:text="$2.50"
-            app:layout_constraintStart_toStartOf="@+id/nineteenDollarextView"
-            tools:layout_editor_absoluteY="113dp" />
+            android:textColor="@android:color/white"
+            app:layout_constraintStart_toStartOf="@+id/outsideTextView1"
+            app:layout_constraintTop_toBottomOf="@+id/descriptionEditText1" />
 
         <TextView
-            android:id="@+id/glassTextView"
+            android:id="@+id/glassTextView1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
             android:paddingTop="5dp"
             android:text="Glass"
+            android:textColor="@android:color/white"
             android:textSize="10sp"
             android:textStyle="italic"
-            app:layout_constraintTop_toTopOf="@+id/twoDollarTextView"
-            tools:layout_editor_absoluteX="50dp" />
+            app:layout_constraintStart_toEndOf="@+id/threeDollarTextView1"
+            app:layout_constraintTop_toTopOf="@+id/threeDollarTextView1" />
 
         <ImageView
-            android:id="@+id/imageView10"
+            android:id="@+id/organeSquareImageView1"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginBottom="8dp"
             android:layout_marginEnd="8dp"
             android:layout_marginStart="120dp"
             android:layout_marginTop="83dp"
-            app:layout_constraintBottom_toBottomOf="@+id/nineteenDollarextView"
-            app:layout_constraintEnd_toEndOf="@+id/longEditText"
+            app:layout_constraintBottom_toBottomOf="@+id/outsideTextView1"
+            app:layout_constraintEnd_toEndOf="@+id/descriptionEditText1"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/active_icons_line2" />
 
         <TextView
-            android:id="@+id/textView16"
+            android:id="@+id/bestPriceTextView1"
             android:layout_width="31dp"
             android:layout_height="21dp"
             android:text="BEST PRICE"
             android:textAlignment="center"
+            android:textColor="@android:color/white"
             android:textSize="8sp"
-            app:layout_constraintBottom_toBottomOf="@+id/imageView10"
-            app:layout_constraintEnd_toEndOf="@+id/imageView10"
-            app:layout_constraintStart_toStartOf="@+id/imageView10"
-            app:layout_constraintTop_toTopOf="@+id/imageView10" />
+            app:layout_constraintBottom_toBottomOf="@+id/organeSquareImageView1"
+            app:layout_constraintEnd_toEndOf="@+id/organeSquareImageView1"
+            app:layout_constraintStart_toStartOf="@+id/organeSquareImageView1"
+            app:layout_constraintTop_toTopOf="@+id/organeSquareImageView1" />
     </android.support.constraint.ConstraintLayout>
 
     <android.support.constraint.ConstraintLayout
@@ -180,7 +188,7 @@
         android:background="@android:color/white">
 
         <TextView
-            android:id="@+id/wineIsHereTextView"
+            android:id="@+id/wineNameIsHereTextView2"
             android:layout_width="0dp"
             android:layout_height="19dp"
             android:layout_marginStart="8dp"
@@ -193,7 +201,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/whiteWhineTextView"
+            android:id="@+id/whiteWineTextView1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="8dp"
@@ -202,12 +210,12 @@
             android:text="White Wine / 2010"
             android:textColor="@android:color/darker_gray"
             android:textSize="12sp"
-            app:layout_constraintEnd_toEndOf="@+id/wineIsHereTextView"
+            app:layout_constraintEnd_toEndOf="@+id/wineNameIsHereTextView2"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/wineIsHereTextView" />
+            app:layout_constraintTop_toBottomOf="@+id/wineNameIsHereTextView2" />
 
         <EditText
-            android:id="@+id/longEditText"
+            android:id="@+id/descriptionEditText2"
             android:layout_width="173dp"
             android:layout_height="65dp"
             android:layout_marginBottom="50dp"
@@ -220,57 +228,63 @@
             android:textSize="12sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/whiteWhineTextView" />
+            app:layout_constraintTop_toBottomOf="@+id/whiteWineTextView1" />
 
         <TextView
-            android:id="@+id/nineteenDollarextView"
+            android:id="@+id/outsideTextView2"
             android:layout_width="206dp"
             android:layout_height="46dp"
             android:background="#221c32"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/longEditText" />
+            app:layout_constraintTop_toBottomOf="@+id/descriptionEditText2" />
 
         <TextView
-            android:id="@+id/bottleTextView"
+            android:id="@+id/bottleTextView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
             android:paddingStart="5dp"
             android:text="Bottle"
+            android:textColor="@android:color/white"
             android:textSize="10sp"
             android:textStyle="italic"
-            app:layout_constraintStart_toEndOf="@+id/expensiveTextView"
-            app:layout_constraintTop_toBottomOf="@+id/glassTextView" />
+            app:layout_constraintStart_toEndOf="@+id/twentyThreeTextView2"
+            app:layout_constraintTop_toBottomOf="@+id/glassTextView2" />
 
         <TextView
-            android:id="@+id/expensiveTextView"
+            android:id="@+id/twentyThreeTextView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:text="$19.50"
-            app:layout_constraintStart_toStartOf="@+id/nineteenDollarextView"
-            app:layout_constraintTop_toBottomOf="@+id/twoDollarTextView" />
+            android:textColor="@android:color/white"
+            app:layout_constraintStart_toStartOf="@+id/outsideTextView2"
+            app:layout_constraintTop_toBottomOf="@+id/threeDollarTextView2" />
 
         <TextView
-            android:id="@+id/twoDollarTextView"
+            android:id="@+id/threeDollarTextView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
             android:text="$2.00"
-            app:layout_constraintStart_toStartOf="@+id/nineteenDollarextView"
-            tools:layout_editor_absoluteY="113dp" />
+            android:textColor="@android:color/white"
+            app:layout_constraintStart_toStartOf="@+id/outsideTextView2"
+            app:layout_constraintTop_toBottomOf="@+id/descriptionEditText2" />
 
         <TextView
-            android:id="@+id/glassTextView"
+            android:id="@+id/glassTextView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
             android:paddingTop="5dp"
             android:text="Glass"
+            android:textColor="@android:color/white"
             android:textSize="10sp"
             android:textStyle="italic"
-            app:layout_constraintTop_toTopOf="@+id/twoDollarTextView"
-            tools:layout_editor_absoluteX="50dp" />
+            app:layout_constraintStart_toEndOf="@+id/threeDollarTextView2"
+            app:layout_constraintTop_toTopOf="@+id/threeDollarTextView2" />
 
         <ImageView
             android:id="@+id/orangeSquareImageView"
@@ -280,14 +294,14 @@
             android:layout_marginEnd="8dp"
             android:layout_marginStart="120dp"
             android:layout_marginTop="83dp"
-            app:layout_constraintBottom_toBottomOf="@+id/nineteenDollarextView"
-            app:layout_constraintEnd_toEndOf="@+id/nineteenDollarextView"
+            app:layout_constraintBottom_toBottomOf="@+id/outsideTextView2"
+            app:layout_constraintEnd_toEndOf="@+id/outsideTextView2"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/active_icons_line2" />
 
         <TextView
-            android:id="@+id/bestPriceTextView"
+            android:id="@+id/bestPriceTextView2"
             android:layout_width="31dp"
             android:layout_height="21dp"
             android:layout_marginBottom="8dp"
@@ -296,6 +310,7 @@
             android:layout_marginTop="8dp"
             android:text="BEST PRICE"
             android:textAlignment="center"
+            android:textColor="@android:color/white"
             android:textSize="8sp"
             app:layout_constraintBottom_toBottomOf="@+id/orangeSquareImageView"
             app:layout_constraintEnd_toEndOf="@+id/orangeSquareImageView"
@@ -305,14 +320,14 @@
     </android.support.constraint.ConstraintLayout>
 
     <ImageView
-        android:id="@+id/imageView11"
+        android:id="@+id/secondWinemageView"
         android:layout_width="206dp"
         android:layout_height="159dp"
         android:scaleType="fitXY"
         app:srcCompat="@drawable/wine" />
 
     <ImageView
-        android:id="@+id/imageView12"
+        android:id="@+id/thirdWineImageView"
         android:layout_width="206dp"
         android:layout_height="159dp"
         android:scaleType="fitXY"
@@ -324,7 +339,7 @@
         android:background="@android:color/white">
 
         <TextView
-            android:id="@+id/wineIsHereTextView"
+            android:id="@+id/wineNameIsHereTextView3"
             android:layout_width="0dp"
             android:layout_height="19dp"
             android:layout_marginStart="8dp"
@@ -337,7 +352,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/whiteWhineTextView"
+            android:id="@+id/redWineTextView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="8dp"
@@ -346,12 +361,12 @@
             android:text="Red Wine / 2005"
             android:textColor="@android:color/darker_gray"
             android:textSize="12sp"
-            app:layout_constraintEnd_toEndOf="@+id/wineIsHereTextView"
+            app:layout_constraintEnd_toEndOf="@+id/wineNameIsHereTextView3"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/wineIsHereTextView" />
+            app:layout_constraintTop_toBottomOf="@+id/wineNameIsHereTextView3" />
 
         <EditText
-            android:id="@+id/longEditText"
+            android:id="@+id/descriptionEditText3"
             android:layout_width="173dp"
             android:layout_height="65dp"
             android:layout_marginBottom="50dp"
@@ -364,83 +379,92 @@
             android:textSize="12sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/whiteWhineTextView" />
+            app:layout_constraintTop_toBottomOf="@+id/redWineTextView2" />
 
         <TextView
-            android:id="@+id/nineteenDollarextView"
+            android:id="@+id/outsideTextView3"
             android:layout_width="200dp"
             android:layout_height="46dp"
             android:background="#221c32"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/longEditText" />
+            app:layout_constraintTop_toBottomOf="@+id/descriptionEditText3"
+            app:layout_constraintVertical_bias="1.0" />
 
         <TextView
-            android:id="@+id/textView15"
+            android:id="@+id/bottleTextView3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
             android:paddingStart="5dp"
             android:text="Bottle"
+            android:textColor="@android:color/white"
             android:textSize="10sp"
             android:textStyle="italic"
-            app:layout_constraintStart_toEndOf="@+id/expensiveTextView"
-            app:layout_constraintTop_toBottomOf="@+id/glassTextView" />
+            app:layout_constraintStart_toEndOf="@+id/twentyThreeTextView3"
+            app:layout_constraintTop_toBottomOf="@+id/glassTextView3" />
 
         <TextView
-            android:id="@+id/expensiveTextView"
+            android:id="@+id/twentyThreeTextView3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:text="$23.00"
-            app:layout_constraintStart_toStartOf="@+id/nineteenDollarextView"
-            app:layout_constraintTop_toBottomOf="@+id/twoDollarTextView" />
+            android:textColor="@android:color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/threeDollarTextView3" />
 
         <TextView
-            android:id="@+id/twoDollarTextView"
+            android:id="@+id/threeDollarTextView3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
             android:text="$3.00"
-            app:layout_constraintStart_toStartOf="@+id/nineteenDollarextView"
-            tools:layout_editor_absoluteY="113dp" />
+            android:textColor="@android:color/white"
+            app:layout_constraintStart_toStartOf="@+id/outsideTextView3"
+            app:layout_constraintTop_toBottomOf="@+id/descriptionEditText3" />
 
         <TextView
-            android:id="@+id/glassTextView"
+            android:id="@+id/glassTextView3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="8dp"
             android:paddingTop="5dp"
             android:text="Glass"
+            android:textColor="@android:color/white"
             android:textSize="10sp"
             android:textStyle="italic"
-            app:layout_constraintTop_toTopOf="@+id/twoDollarTextView"
-            tools:layout_editor_absoluteX="50dp" />
+            app:layout_constraintStart_toEndOf="@+id/threeDollarTextView3"
+            app:layout_constraintTop_toBottomOf="@+id/descriptionEditText3" />
 
         <ImageView
-            android:id="@+id/imageView10"
+            android:id="@+id/organeSquareImageView3"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginBottom="8dp"
             android:layout_marginEnd="8dp"
             android:layout_marginStart="120dp"
             android:layout_marginTop="83dp"
-            app:layout_constraintBottom_toBottomOf="@+id/nineteenDollarextView"
-            app:layout_constraintEnd_toEndOf="@+id/longEditText"
+            app:layout_constraintBottom_toBottomOf="@+id/outsideTextView3"
+            app:layout_constraintEnd_toEndOf="@+id/descriptionEditText3"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/active_icons_line2" />
 
         <TextView
-            android:id="@+id/textView16"
+            android:id="@+id/bestPriceTextView"
             android:layout_width="31dp"
             android:layout_height="21dp"
             android:text="BEST PRICE"
             android:textAlignment="center"
+            android:textColor="@android:color/white"
             android:textSize="8sp"
-            app:layout_constraintBottom_toBottomOf="@+id/imageView10"
-            app:layout_constraintEnd_toEndOf="@+id/imageView10"
-            app:layout_constraintStart_toStartOf="@+id/imageView10"
-            app:layout_constraintTop_toTopOf="@+id/imageView10" />
+            app:layout_constraintBottom_toBottomOf="@+id/organeSquareImageView3"
+            app:layout_constraintEnd_toEndOf="@+id/organeSquareImageView3"
+            app:layout_constraintStart_toStartOf="@+id/organeSquareImageView3"
+            app:layout_constraintTop_toTopOf="@+id/organeSquareImageView3" />
 
     </android.support.constraint.ConstraintLayout>
 
@@ -450,7 +474,7 @@
         android:background="@android:color/white">
 
         <TextView
-            android:id="@+id/wineIsHereTextView"
+            android:id="@+id/wineNameIsHereTextView4"
             android:layout_width="0dp"
             android:layout_height="19dp"
             android:layout_marginStart="8dp"
@@ -465,7 +489,7 @@
     </android.support.constraint.ConstraintLayout>
 
     <ImageView
-        android:id="@+id/imageView13"
+        android:id="@+id/fourthWineImageView"
         android:layout_width="206dp"
         android:layout_height="match_parent"
         android:scaleType="fitXY"
