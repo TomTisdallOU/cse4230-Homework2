@@ -1,15 +1,225 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<TableLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="400dp"
-        android:layout_marginTop="8dp"
-        android:src="@drawable/steak_dinner"
-        app:layout_constraintTop_toTopOf="parent" />
+    <TableRow
+        android:layout_marginBottom="0dp">
 
-</android.support.constraint.ConstraintLayout>
+        <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/allCollectionsToolbar"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="?attr/actionBarSize"
+
+            android:background="#221c32">
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="Back Arrow"
+                    android:scaleType="fitStart"
+                    android:src="@drawable/arrow" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="24dp"
+                    android:text="News" />
+
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+    </TableRow
+        >
+
+    <TableRow
+
+      >
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:layout_weight=".05"
+        android:layout_marginTop="-5dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+
+            android:layout_alignParentStart="true"
+            android:layout_weight="0.5"
+            android:adjustViewBounds="false"
+            android:cropToPadding="false"
+            android:src="@drawable/steak_dinner"></ImageView>
+
+        <LinearLayout
+            android:layout_marginTop="-5dp"
+            android:layout_width="0dp"
+
+            android:layout_height="200dp"
+            android:layout_weight="0.5"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:text="LOREM IPSUM DOLOR SIT AMET, CONSECTETUR"
+                android:textStyle="bold"
+                android:textColor="@android:color/black">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Thursday October 11th, 2018"
+                android:textColor="#FFB2ADAF"
+                android:textSize="8dp">
+
+            </TextView>
+            <TextView
+                android:paddingTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim"
+                android:textColor="#FFB2ADAF"
+                android:textSize="12dp">
+
+            </TextView>
+        </LinearLayout>
+    </LinearLayout>
+
+</TableRow>
+
+    <TableRow>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_weight=".05"
+            android:orientation="horizontal"
+            android:layout_marginTop="-10dp"
+            >
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:layout_weight="0.5"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:text="LOREM IPSUM DOLOR SIT AMET, CONSECTETUR"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Thursday October 11th, 2018"
+                    android:textColor="#FFB2ADAF"
+                    android:textSize="8dp">
+
+                </TextView>
+                <TextView
+                    android:paddingTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim"
+                    android:textColor="#FFB2ADAF"
+                    android:textSize="12dp">
+
+                </TextView>
+            </LinearLayout>
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_marginTop="-5dp"
+                android:layout_weight="0.5"
+                android:layout_height="200dp"
+
+                android:layout_alignParentStart="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/chicken_dinner"></ImageView>
+        </LinearLayout>
+
+    </TableRow>
+
+    <TableRow>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_weight=".05"
+            android:orientation="horizontal"
+            >
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="200dp"
+                android:layout_marginTop="-5dp"
+                android:layout_alignParentStart="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/fish_dinner"></ImageView>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:layout_weight="0.5"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:text="LOREM IPSUM DOLOR SIT AMET, CONSECTETUR"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Thursday October 11th, 2018"
+                    android:textColor="#FFB2ADAF"
+                    android:textSize="8dp">
+
+                </TextView>
+                <TextView
+                    android:paddingTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim"
+                    android:textColor="#FFB2ADAF"
+                    android:textSize="12dp">
+
+                </TextView>
+            </LinearLayout>
+        </LinearLayout>
+
+    </TableRow>
+</TableLayout>
