@@ -274,12 +274,10 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
         android:layout_marginBottom="16dp"
-        android:backgroundTint="@android:color/holo_orange_dark"
         android:backgroundTintMode="src_over"
-        android:tint="@android:color/holo_orange_dark"
         app:layout_constraintBottom_toTopOf="@+id/descriptionEditText"
         app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/active_icons_line2" />
+        app:srcCompat="@drawable/active_icons_line" />
 
     <TextView
         android:id="@+id/bestPriceTextView"
