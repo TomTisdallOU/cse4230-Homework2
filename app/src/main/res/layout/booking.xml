@@ -2,9 +2,50 @@
 <GridLayout
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#d921283b">
+    android:rowCount="4"
+
+    android:alpha="0.75"
+    android:background="@drawable/restaurant_3">
 
 
-    <!-- Button border is 75% opacity of FFFFFF   -->
+    android:layout_marginBottom="0dp">
+
+    <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/allCollectionsToolbar"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="?attr/actionBarSize"
+
+        android:background="#221c32">
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="Back Arrow"
+                android:scaleType="fitStart"
+                android:src="@drawable/arrow" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:textSize="24dp"
+                android:text="News" />
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
 
 </GridLayout>
